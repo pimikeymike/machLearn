@@ -39,7 +39,10 @@ data(meuse)
 
 dmnds <- diamonds#[sample(1:nrow(diamonds),1e3),]
 
-# leaf <- read.csv('/Users/davesteps/Desktop/kaggle_data/leaf/train.csv')
+
+### read local directory
+ld <- as.character(getwd())
+leaf <- read.csv('/Users/davesteps/Desktop/kaggle_data/leaf/train.csv')
 
 datasets <- list(
   'iris'=iris,
